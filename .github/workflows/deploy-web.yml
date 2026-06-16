@@ -1,0 +1,36 @@
+name: Deploy Web
+
+# Auto-deploys the web build to EAS Hosting (https://bfull.expo.app) on every
+# push to master. The Android APK is intentionally left as a manual step.
+on:
+  push:
+    branches: [master]
+  workflow_dispatch: # lets you trigger a deploy manually from the Actions tab
+
+jobs:
+  deploy-web:
+    name: Export & deploy web
+    runs-on: ubuntu-latest
+    env:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Set up EAS CLI
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Export web and deploy to production
+        run: npm run deploy:web
