@@ -4,7 +4,7 @@ Prototipe aplikasi untuk memesan makanan di kantin BINUS tanpa perlu mengantre. 
 
 Dibuat untuk mata kuliah Human and Computer Interaction (COMP6800001). Satu kode dipakai untuk web dan Android, memakai Expo (React Native).
 
-Demo web: https://bfull.expo.app
+Demo web: https://bfull-master.vercel.app/
 
 
 ## Catatan tentang proyek ini
