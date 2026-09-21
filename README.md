@@ -6,11 +6,12 @@ Dibuat untuk mata kuliah Human and Computer Interaction (COMP6800001). Satu kode
 
 Demo web: https://bfull.expo.app
 
-<!-- Tambahkan di sini bagian yang kamu kerjakan sendiri, misalnya fitur atau halaman tertentu. -->
 
 ## Catatan tentang proyek ini
 
-Aplikasi ini adalah tugas kelompok dua orang untuk mata kuliah Human and Computer Interaction. Repo ini berisi versi dengan tampilan berbahasa Inggris.
+Aplikasi ini dibuat untuk tugas kelompok mata kuliah Human and Computer Interaction. Seluruh perancangan dan penulisan kodenya saya kerjakan sendiri. Sebagian commit di repo kelompok tercatat atas nama rekan satu kelompok karena dia yang menjalankan push saat itu.
+
+Repo ini berisi versi dengan tampilan berbahasa Inggris.
 
 ## Fitur
 
