@@ -10,7 +10,7 @@ Demo web: https://bfull.expo.app
 
 ## Catatan tentang proyek ini
 
-Aplikasi ini dikerjakan berdua dengan Nicholas Darren. Repo tim beserta riwayat commit lengkapnya ada di https://github.com/nichodarren/bfull, dan repo ini adalah salinannya dengan tampilan berbahasa Inggris. Versi di repo tim tampilannya sudah diterjemahkan ke bahasa Indonesia.
+Aplikasi ini adalah tugas kelompok dua orang untuk mata kuliah Human and Computer Interaction. Repo ini berisi versi dengan tampilan berbahasa Inggris.
 
 ## Fitur
 
