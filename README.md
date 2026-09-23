@@ -13,6 +13,30 @@ Aplikasi ini dibuat untuk tugas kelompok mata kuliah Human and Computer Interact
 
 Repo ini berisi versi dengan tampilan berbahasa Inggris.
 
+## Tampilan
+
+| Beranda | Daftar tenant |
+|---|---|
+| ![Beranda: pencarian, filter kategori, dan kartu menu](docs/screenshots/bfull-menu.jpg) | ![Daftar tenant dengan rating dan perkiraan waktu](docs/screenshots/bfull-tenant.jpg) |
+| **Tray** | **Pembayaran QRIS** |
+| ![Tray dengan pengatur jumlah, voucher, dan total](docs/screenshots/bfull-tray.jpg) | ![Pop-up pembayaran QRIS](docs/screenshots/bfull-bayar.jpg) |
+| **Ulasan setelah pesanan diambil** | **Profil dan bfull Pay** |
+| ![Pop-up ulasan dengan bintang, tag cepat, dan komentar](docs/screenshots/bfull-ulasan.jpg) | ![Profil dengan saldo, poin, dan riwayat pesanan](docs/screenshots/bfull-profil.jpg) |
+
+Pelacak pesanan di bagian atas beranda:
+
+![Pelacak pesanan: dikonfirmasi, dimasak, siap diambil](docs/screenshots/bfull-lacak.jpg)
+
+Papan antrean kantin, diambil dari versi berbahasa Indonesia:
+
+![Papan antrean kantin dengan status keramaian setiap tenant](docs/screenshots/bfull-antrean.jpg)
+
+## Masalah yang diselesaikan
+
+Waktu istirahat di antara kelas hanya sekitar 20 sampai 30 menit, dan hampir semua mahasiswa istirahat di jam yang sama. Kantin jadi penuh, waktu habis untuk mengantre dan menunggu makanan dimasak, dan pembeli sering baru tahu menu favoritnya habis setelah sampai di depan kasir. bfull memindahkan pemesanan dan pembayaran ke aplikasi, dan menampilkan keramaian setiap tenant serta perkiraan waktu siap, sehingga pengguna cukup datang saat makanan sudah siap.
+
+Pengguna utamanya mahasiswa dengan jadwal padat. Dosen dan staf yang enggan berdesakan di jam makan siang juga termasuk target pengguna.
+
 ## Fitur
 
 - Masuk dan daftar dengan email `@binus.ac.id`, lengkap dengan akun demo.
@@ -29,6 +53,30 @@ Repo ini berisi versi dengan tampilan berbahasa Inggris.
 - Favorit, riwayat pesanan, dompet, dan poin.
 - Data tersimpan di perangkat, sehingga tetap ada setelah aplikasi ditutup.
 - Tampilan menyesuaikan perangkat: menu atas dan tata letak beberapa kolom di web, tab bawah di ponsel.
+
+## Keputusan desain
+
+- **"Tray", bukan "Cart".** Nampan adalah benda yang memang dipakai membawa makanan di kantin, jadi fungsinya langsung dipahami.
+- **Satu tenant per Tray.** Setiap tenant memasak dan menyerahkan pesanannya sendiri, jadi pesanan dari beberapa tenant akan punya waktu siap dan tempat ambil yang berbeda. Saat pengguna menambah menu dari tenant lain, aplikasi meminta konfirmasi dulu.
+- **Tombol bayar tidak muncul saat Tray kosong**, supaya transaksi tidak bisa dimulai tanpa pesanan.
+- **Warna oranye hanya untuk tombol aksi utama**, seperti tombol tambah, Browse Menu, dan Submit Rating, supaya pengguna tahu apa yang bisa ditekan.
+- **Menu navigasi dan susunan kartu yang sama di setiap halaman**, supaya informasi seperti harga dan waktu tunggu selalu ada di posisi yang sama.
+
+## Pengujian pengguna
+
+Prototipe diuji oleh 20 mahasiswa BINUS (11 lewat laptop, 9 lewat ponsel), masing-masing sekitar 3 sampai 10 menit. Penguji diminta masuk, memilih menu, mengisi Tray, membayar dengan QRIS, dan melacak pesanan tanpa panduan tambahan, lalu mengisi kuesioner skala 1 sampai 5.
+
+| Pernyataan | Rata-rata (1-5) |
+|---|---|
+| Bisa memakai aplikasi tanpa petunjuk tambahan | 4,75 |
+| Alur dari masuk sampai melacak pesanan terasa logis | 4,45 |
+| Tampilan nyaman dan tidak membingungkan | 4,45 |
+| Kepuasan keseluruhan | 4,80 |
+| Bersedia memakai kalau diterapkan di kantin BINUS | 4,80 |
+
+Sebanyak 11 penguji memperkirakan aplikasi ini menghemat 8 sampai 12 menit waktu istirahat, dan 5 lainnya lebih dari 12 menit. Lebih dari 90% penguji menyelesaikan semua tugas tanpa kendala, dan satu penguji sempat bingung di halaman Tray. Masukan terbanyak: pembayaran langsung lewat dompet digital seperti GoPay, informasi gizi di setiap menu, dan layanan antar ke kelas.
+
+Pengujian ini dilakukan bersama kelompok. Pengujinya sedikit dan direkrut sendiri, dan skornya berasal dari penilaian penguji, jadi hasilnya lebih tepat dibaca sebagai umpan balik awal daripada ukuran kegunaan yang ketat.
 
 ## Teknologi
 

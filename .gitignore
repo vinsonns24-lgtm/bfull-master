@@ -42,3 +42,6 @@ yarn-error.*
 
 # Local verification artifacts
 .verify/
+
+# Pengaturan editor lokal
+.claude/
