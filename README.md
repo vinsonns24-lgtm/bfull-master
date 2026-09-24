@@ -161,6 +161,12 @@ lib/                    tipe data, menu contoh, format angka, dan state aplikasi
 - Pembayaran QRIS hanya tampilan, tidak ada transaksi sungguhan.
 - Data pesanan disimpan di perangkat masing-masing, sehingga tidak bisa dilihat oleh tenant.
 
+## Pelajaran dari proyek ini
+
+- Memusatkan prototipe awal pada alur inti (memilih menu, membayar, melacak pesanan), lalu baru membuat halaman pendukung seperti profil dan voucher setelah alur inti tervalidasi.
+- Lebih banyak iterasi di Figma sebelum menulis kode, karena mengubah tata letak di desain jauh lebih cepat daripada di kode.
+- Menguji aplikasi langsung di kantin saat jam sibuk. Masalah utamanya adalah waktu yang mepet di tengah keramaian, dan kondisi itu tidak muncul saat pengujian di tempat yang tenang.
+
 ## Lisensi
 
 MIT, mengikuti template awal Expo. Lihat file `LICENSE`.
